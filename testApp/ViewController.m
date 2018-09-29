@@ -22,47 +22,6 @@
 
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.mainView addGestureRecognizer:pan];
-    
-    
-    
-//    self.view.backgroundColor = [UIColor grayColor];
-//    
-//    UIImage * image = [UIImage imageNamed:@"IMG_3443.jpg"];
-//    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width)];
-//    imageView.center = self.view.center;
-//    imageView.image = [self getimage:image];
-//    [self.view addSubview:imageView];
-}
-
-- (UIImage *)getimage:(UIImage *)image
-{
-    UIImage * result;
-    
-    // 1.初始化图片
-    // 2.开启一个与图片大小相同的上下文
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(image.size.width, image.size.height), NO, 1);
-    // 3.设置一个圆形裁剪区域
-    // 3.1 绘制一个圆形
-    UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0,image.size.width - 60, image.size.height) cornerRadius:30];
-    
-    path.lineJoinStyle = kCGLineJoinRound;
-    [path moveToPoint:CGPointMake(image.size.width - 60, 50)];
-    [path addLineToPoint:CGPointMake(image.size.width - 30, 70)];
-    
-    [path addLineToPoint:CGPointMake(image.size.width - 60, 90)];
-    
-    // 3.2 把圆形的路径设置成裁剪区域
-    [path addClip];
-    
-    
-    // 4.把图片绘制到上下文中(超过裁剪区域以外的将被裁剪掉)
-    [image drawAtPoint:CGPointZero];
-    // 5.从上下文中获得一张新的图片
-    result = UIGraphicsGetImageFromCurrentImageContext();
-    // 6.关闭上下文
-    UIGraphicsEndImageContext();
-    
-    return result;
 }
 
 - (void)createView

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B613FFC7212EA60F008A5A8A /* IMG_3443.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B613FFC6212EA60F008A5A8A /* IMG_3443.jpg */; };
 		B6C5FB9720FDA67D00D1B80B /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5FB9620FDA67D00D1B80B /* testView.m */; };
 		B6D4B94B20B2B1EC0004FD64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D4B94A20B2B1EC0004FD64 /* AppDelegate.m */; };
 		B6D4B94E20B2B1EC0004FD64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D4B94D20B2B1EC0004FD64 /* ViewController.m */; };
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B613FFC6212EA60F008A5A8A /* IMG_3443.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3443.jpg; sourceTree = "<group>"; };
 		B6C5FB9520FDA67D00D1B80B /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		B6C5FB9620FDA67D00D1B80B /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
 		B6D4B94620B2B1EC0004FD64 /* testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +104,6 @@
 		B6D4B94820B2B1EC0004FD64 /* testApp */ = {
 			isa = PBXGroup;
 			children = (
-				B613FFC6212EA60F008A5A8A /* IMG_3443.jpg */,
 				B6D4B94920B2B1EC0004FD64 /* AppDelegate.h */,
 				B6D4B94A20B2B1EC0004FD64 /* AppDelegate.m */,
 				B6D4B94C20B2B1EC0004FD64 /* ViewController.h */,
@@ -243,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B613FFC7212EA60F008A5A8A /* IMG_3443.jpg in Resources */,
 				B6D4B95620B2B1EF0004FD64 /* LaunchScreen.storyboard in Resources */,
 				B6D4B95320B2B1EF0004FD64 /* Assets.xcassets in Resources */,
 				B6D4B95120B2B1EC0004FD64 /* Main.storyboard in Resources */,
